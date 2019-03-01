@@ -209,6 +209,7 @@ require([
             accessInputs.refresh();
             console.log(adds, updates, deletes);
             $("#edit-form")[0].reset();
+            
         }, function (error) {
             console.log(error);
             alert('There was an error submitting the form. Please try again.');

@@ -177,6 +177,7 @@ require([
         }).then(function (adds, updates, deletes) {
             accessInputs.refresh();
             console.log("Added feature successfully<br />OBJECTID: " + adds[0].objectId);
+            alert("Create location successful!");
             $("#create-form")[0].reset();
         }, function (a) {
             console.log(a);
@@ -207,7 +208,7 @@ require([
             updateFeatures: [selectedFeature]
         }).then(function (adds, updates, deletes) {
             accessInputs.refresh();
-            console.log(adds, updates, deletes);
+            alert("Edit location successful!");
             $("#edit-form")[0].reset();
             
         }, function (error) {

@@ -48,8 +48,8 @@ require([
 
     // popout template settings
     var template = {
-        title: "{Name}",
-        content: "<p><b>{Address}</b><br/><table class='table'><thead><tr><th colspan=2>Attribute</th></tr></thead><tbody></tbody>{Service_Animal:attributeRow}{Braille_Signs:attributeRow}{Auditory_Signals:attributeRow}{ASL_Friendly:attributeRow}{Reserved_Parking:attributeRow}{Fragrance_Free:attributeRow}{Elevators:attributeRow}{Automatic_Doors:attributeRow}{Ramp:attributeRow}{Male_Washroom:attributeRow}{Female_Washroom:attributeRow}{Gender_Neutral_Washroom:attributeRow}{Water:attributeRow}{Seating:attributeRow}{Shelter:attributeRow}{Single_Washroom:attributeRow}{Noise_Level:attributeRow}{Lighting:attributeRow}{Public_Space:attributeRow}{Pathway:attributeRow}{Name:attributeRow}{Address:attributeRow}{Slope}</tbody></table></p>",
+        title: "<b>{Name}</b>",
+        content: "<p>{Address}<br/><table class='table'><thead><tr><th colspan=2>Attribute</th></tr></thead><tbody></tbody>{Service_Animal:attributeRow}{Braille_Signs:attributeRow}{Auditory_Signals:attributeRow}{ASL_Friendly:attributeRow}{Reserved_Parking:attributeRow}{Fragrance_Free:attributeRow}{Elevators:attributeRow}{Automatic_Doors:attributeRow}{Ramp:attributeRow}{Male_Washroom:attributeRow}{Female_Washroom:attributeRow}{Gender_Neutral_Washroom:attributeRow}{Water:attributeRow}{Seating:attributeRow}{Shelter:attributeRow}{Single_Washroom:attributeRow}{Noise_Level:attributeRow}{Lighting:attributeRow}{Public_Space:attributeRow}{Pathway:attributeRow}{Name:attributeRow}{Address:attributeRow}{Slope}</tbody></table></p>",
         actions: [editThisAction]
     };
 

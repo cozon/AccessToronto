@@ -148,7 +148,22 @@ require([
 
         // get form attributes
         var formData = $("#create-form").serializeArray();
-        var attributes = {}
+        var attributes = {
+            ASL_Friendly: 0,
+            Auditory_Signals: 0,
+            Automatic_Doors: 0,
+            Braille_Signs: 0,
+            Elevators: 0,
+            Female_Washroom: 0,
+            Fragrance_Free: 0,
+            Gender_Neutral_Washroom: 0,
+            Lighting: "",
+            Male_Washroom: 0,
+            Noise_Level: "",
+            Ramp: 0,
+            Reserved_Parking: 0,
+            Service_Animal: 0
+        }
         var lat, lng;
         for (input of formData) {
             if (input.name == 'latitude')
@@ -177,11 +192,9 @@ require([
         }).then(function (adds, updates, deletes) {
             accessInputs.refresh();
             console.log("Added feature successfully<br />OBJECTID: " + adds[0].objectId);
-            alert("Create location successful!");
             $("#create-form")[0].reset();
         }, function (a) {
             console.log(a);
-            alert('There was an error submitting the form. Please try again.');
         });
 
         $('#form-modal').modal('hide');
@@ -208,12 +221,10 @@ require([
             updateFeatures: [selectedFeature]
         }).then(function (adds, updates, deletes) {
             accessInputs.refresh();
-            alert("Edit location successful!");
             $("#edit-form")[0].reset();
-            
+
         }, function (error) {
             console.log(error);
-            alert('There was an error submitting the form. Please try again.');
         });
 
         $('#edit-form-modal').modal('hide');

@@ -75,12 +75,12 @@ body,
      padding-bottom: 20px;
  }
  
- #submitbtn {
-     background-color: #2c757f;
+ .btn.btn-primary {
+     background-color: #2c757f !important;
  }
  
- #otherbtn {
-     color: #701C41;
+ .btn.btn-link {
+     color: #701C41 !important;
  }
  
  #entry-h {
